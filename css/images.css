@@ -1,0 +1,927 @@
+/*  =============================================================
+	Travis Wall digital
+	images.css
+	v1.0 - 04.10.13 
+	revision history:
+============================================================== */
+
+/*  =============================================================
+	CONTENTS
+
+	00	general rules
+	01	headers
+	02	links
+
+	03	media queries
+
+============================================================== */
+
+/*  =============================================================
+	00 general rules
+============================================================== */
+
+img {
+	border: none;
+}
+
+.portfolio-image {
+	margin-left:0px;
+}
+
+/* -- work images -- */
+
+.work-container img {
+	max-width:100%;
+	height:auto;
+	margin-bottom:3.571428571428571%;
+}
+
+.article-container img {
+	max-width:100%;
+	height:auto;
+	margin-left:0px;
+}	
+
+img.small-left, img.small-right { /* -- smaller images sitting next to each other -- */
+	max-width:47.5%;
+	height:auto;
+	margin-right:5%;
+}
+
+img.small-right {
+	margin-right:0px;
+}
+
+img.article-follow { /* images that follow another image only in a blog (not work) need this tag to stop big gaps */
+	margin-top:0px !important;
+}
+
+
+/* -- header icons -- */
+
+.icon {
+	text-indent:-119988px;
+	text-align:left;
+	float:right;
+	margin-right: 18px;
+	background:url(assets/icons_new.png)no-repeat;
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	margin-top: -27px;
+}
+
+.icon-about {
+	margin-right: 28px;
+}
+
+.icon-on {
+	background-position:-30px; /* moves background image sprite in the toggle */
+}
+
+.short-story, .longer-story, .whats-next {
+	height:31px;
+	padding-top:10px;
+	padding-left:50px;
+	margin-bottom:27px;
+	background-image:url(assets/background.svg);
+}
+
+.short-story {
+	width:115px;	
+}
+
+.longer-story {
+	width:125px;
+	margin-top:27px;
+	background-position:-165px;
+}
+
+.whats-next {
+	background-position:-339px;	
+	width:127px;
+	margin-top:27px;	
+}
+
+/* triangle in the divider */
+
+.triangle-divider {
+	width:30px;
+	height:30px;
+	background:url(assets/icons.png)no-repeat;
+	background-position:-270px;
+	margin-top:60px;
+	margin-left:28px;	
+}
+
+.triangle-header {
+	width:30px;
+	height:30px;
+	background:url(assets/icons.png)no-repeat;
+	background-position:-270px;
+	margin-top:5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-list {
+	width:33px;
+	height:24px;
+	background:url(assets/icons-categorynav.png)no-repeat;
+	float:left;
+	margin-top:29px;
+	margin-right:10px;
+	margin-left:23px;	
+}
+
+.icon-thumbs {
+	width:33px;
+	height:24px;
+	background:url(assets/icons-categorynav.png)no-repeat;
+	background-position:-33px;
+	float:left;
+	margin-top:29px;
+	margin-right:10px;	
+	margin-left:7px;
+}
+
+.icon-list-on {
+	background-position:-66px;
+
+}
+
+.icon-thumbs-on {
+	background-position:-99px;
+}
+
+/* -- meta area -- */
+
+/* information icon */
+
+.icon-work-expand {
+	text-indent:-119988px;
+	text-align:left;
+	float:right;
+	background:url(assets/icons.png)no-repeat;
+	background-position:-300px;	
+	width:30px;
+	height:30px;
+	overflow:hidden;
+}
+
+.icon-work-expand-on {
+	background-position:-330px; /* moves background image sprite in the toggle */
+}
+
+/* bullets in list of tags and related items */
+
+ul li {
+	background-image: url(assets/bullet.png);
+	background-repeat:no-repeat;
+	background-position: 20px 50%; 		
+}
+
+li:hover	{ 
+	background-position: -923px 50%; 			
+}
+
+.more-link-padding {
+height:20px;
+}
+
+.more-link-on {
+	background-color:rgba(0, 0, 0, 0.05);	
+}
+
+.work-preview-hover {
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+.work-preview-one {
+	background-image: url(assets/mash.png);
+}
+
+.work-preview-one-hover {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	opacity:0.50;
+	filter:alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.work-preview-two {
+	background-image: url(assets/unicentre_posters.png);
+}
+
+.work-preview-three {
+	background-image: url(assets/student_posters.png);
+}
+
+.work-preview-four {
+	background-image: none;
+}
+
+.work-preview-five {
+	background-image: url(assets/student_posters.png);
+}
+
+.work-preview-six {
+	background-image: url(assets/student_posters.png);
+}
+
+.work-preview-seven {
+	background-image: url(assets/student-posters/student-posters-6-small.gif);
+}
+
+.work-preview-eight {
+	background-image: url(assets/student_posters.png);
+}
+
+@media screen and (min-width: 1601px) { 
+	
+	.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-6.gif);
+	}				
+					
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-6.gif);
+	}
+
+	.work-preview-three {
+		background-image: url(assets/mash/mash-6.jpg);
+	}
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-6.gif);
+	}
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-6.gif);
+	}
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-6.gif);
+	}
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-6.gif);
+	}
+					
+	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-6.gif);
+	}
+	
+}
+
+@media screen and (max-width: 1600px) {
+									
+	.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-5.gif);
+	}										
+	
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-5.gif);
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-5.jpg);
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-5.gif);
+	}
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-5.gif);
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-5.gif);
+	}	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-5.gif);
+	}
+									
+	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-5.gif);
+	}									
+	
+}
+
+@media screen and (max-width: 1200px) {
+													
+	.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-4.gif);
+	}													
+	
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-4.gif);
+	}	 
+
+	.work-preview-three {
+		background-image: url(assets/mash/mash-4.jpg);
+	}	
+
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-4.gif);
+	}
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-4.gif);
+	}		
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-4.gif);
+	}	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-4.gif);
+	}
+
+	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-4.gif);
+	}													
+													
+}
+
+@media screen and (max-width: 1023px) {
+																	
+	.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-3.gif);
+	}																	
+	 
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-3.gif);
+	}
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-3.jpg);
+	}	
+
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-3.gif);
+	}
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-3.gif);
+	}		
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-3.gif);
+	}		
+
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-3.gif);
+	}
+
+	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-3.gif);
+	}																	
+																	
+}
+
+@media screen and (max-width: 800px) {
+
+	.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-2.gif);
+	}																						
+																					
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-2.gif);		
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-2.jpg);
+	}	
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-2.gif);
+	}
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-2.gif);
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-2.gif);
+	}			
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-2.gif);
+	}
+
+	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-2.gif);
+	}																					
+																					
+}
+
+@media screen and (max-width: 500px) {
+																								.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-1.gif);
+	}			
+																							
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-1.gif);
+	}	 
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-1.jpg);
+	}	
+
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-1.gif);
+	}
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-1.gif);
+	}		
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-1.gif);
+	}		
+
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-1.gif);
+	}
+
+	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-1.gif);
+	}																									
+																									
+}
+
+/* -- social icons -- */
+
+/* general rules */
+
+.icon-social {
+	float:left;
+	margin-left:4.444444444444445%;
+	margin-right:4.444444444444445%;
+	margin-top:-3px;
+	margin-bottom:20px;
+	height:46px;
+	width:46px;
+	background:url(assets/icons-social-new-01.svg)no-repeat;
+}
+
+/* individual icons */
+.icon-email-hover {
+	background-position: -276px;																								
+}
+
+.icon-twitter {
+	background-position: -46px;
+}
+																								
+.icon-twitter-hover {
+	background-position: -322px;
+}
+
+.icon-flickr {
+	background-position: -92px;
+}
+
+.icon-flickr-hover {
+	background-position: -368px;
+}																								
+																								
+.icon-instagram {
+	background-position: -138px;
+}
+																								
+.icon-instagram-hover {
+	background-position: -414px;
+}																								
+
+.icon-skype {
+	background-position: -184px;
+}
+																								
+.icon-skype-hover {
+	background-position: -460px;
+}
+																								
+.icon-linkedin {
+	background-position: -230px;
+}
+																								
+.icon-linkedin-hover {
+	background-position: -506px;
+}
+
+/* ---------------- responsive ---------------- */
+
+@media screen and (min-width: 1025px) { 
+	
+	.icon-work-expand {
+		display:none;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	
+	.icon-work-expand {
+		display:none;
+	}
+	
+	.triangle {
+		margin-left:4.444444444444445%;	
+	}
+	
+	.icon-work-expand {
+		margin-left:auto;
+		margin-right:auto;
+		float:none;
+	}
+	
+	img.small-left, img.small-right {
+		max-width:100%;
+		height:auto;
+		margin-right:0px;
+	}
+	
+	.icon-list, .icon-thumbs {
+		margin-right:0px;
+		margin-left:0px;	
+	}		
+
+}
+
+@media screen and (max-width: 625px) { 
+	
+	.icon {
+		margin-right: 24.82926829268293%;
+	}
+
+}
+
+@media screen and (max-width: 500px) { 
+	
+	.triangle {
+		margin-left:46.83333333333333%;
+		margin-top:-3px;	
+	}
+	
+	.icon {
+		display:none;
+	}
+	
+	.icon-work-expand {
+		margin:auto;
+	}
+	
+	ul li {
+		background-image: url(assets/bullet.png);
+		background-repeat:no-repeat;
+		background-position: 10px 50%; 		
+	}
+
+	li:hover { 
+		background-position: -933px 50%; 			
+	}
+	
+	.icon-list{
+		float:right;
+		margin-right:5%;	
+	}
+	
+	.icon-list-words{
+		float:none;
+		margin-right:auto;
+		margin-left:auto;			
+	}
+	
+	.icon-thumbs {
+		float:left;
+		margin-left:5%;					
+	}
+
+.triangle-divider {
+margin-top:3px;
+																													display: block;
+  margin-left: auto;
+  margin-right: auto;
+}		
+
+}
+
+@media screen and (max-width: 415px) { 
+
+	
+}
+
+/* ---------------- image replacement for retina displays ----------------
+
+swaps out loaded images for a higher resolution one, which is then downscaled. Technique picked up from http://miekd.com/articles/using-css-sprites-to-optimize-your-website-for-retina-displays/
+
+---- */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-device-pixel-ratio: 2) {
+	.triangle,
+	.icon,
+	.icon-work-expand,
+	.icon-external,
+	.information-icon {
+		background:url(assets/icons2x.png)no-repeat;
+		background-size:360px 30px;
+	}
+
+
+
+                                                                                                    .icon {
+	    background:url(assets/icons2x.png)no-repeat;
+        background-size: 360px 30px;                                                                    }                                                                                                     
+
+.icon-about {
+	margin-right: 28px;
+}
+
+.icon-on {                                                                                              background:url(assets/icons2x.png)no-repeat;                                                        
+background-size: 360px 30px;                                               
+background-position:-30px;
+}                                                                                                 
+
+.triangle-divider {
+    background:url(assets/icons2x.png)no-repeat;                                                       
+    background-size: 360px 30px;                                               
+	background-position:-270px;
+}
+
+.triangle-header {
+	background:url(assets/icons2x.png)no-repeat;
+     background-size: 360px 30px;                                               
+	background-position:-270px;
+}
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    
+	
+	ul li {
+		background-image:url(assets/bullet2x.png);
+		background-size:4025px 18px;
+	}
+	
+	.meta-tags {
+		background-image:url(assets/bullet2x.png);
+		background-size:4025px 18px;
+	}
+
+	.meta-date {                                                                                   		   background-image:url(assets/bullet2x.png);
+		background-size:4025px 18px;    
+    }                 
+
+	
+	.work-preview-hover {
+		background-image:url(assets/hover-bg2x.png);
+		background-size:800px 600px;		
+	}                                                                                        
+}
+
+
+
+@media only screen and (-webkit-min-pixel-ratio:2), only screen and (min-device-pixel-ratio: 2), screen and (min-width:1601px){
+																								.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-6-2x.gif);
+        background-size: 405px 256px;                 
+	}			
+                                                                                             
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-6-2x.gif);
+        background-size: 405px 256px;                 
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-6-2x.jpg);
+        background-size: 405px 256px;                 
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-6-2x.gif);
+        background-size: 405px 256px;                 
+    }
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-6-2x.gif);
+        background-size: 405px 256px;                 
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-6-2x.gif);
+        background-size: 405px 256px;                 
+        }	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-6-2x..gif);
+        background-size: 405px 256px;                 
+	}
+																																	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-6-2x.gif);
+        background-size: 405px 256px;																									}														
+																																															
+}                                                                                                   
+                                                                                                                                                                                                    @media only screen and (-webkit-min-pixel-ratio:2), only screen and (min-device-pixel-ratio: 2), screen and (max-width:1600px){                                              
+																								.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-5-2x.gif);
+        background-size: 338px 216px;                 
+	}							
+																				
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-5-2x.gif);
+        background-size: 338px 216px;                 
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-5-2x.jpg);
+        background-size: 338px 216px;                 
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-5-2x.gif);
+        background-size: 338px 216px;                 
+    }
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-5-2x.gif);
+        background-size: 338px 216px;                 
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-5-2x.gif);
+        background-size: 338px 216px;                 
+    }	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-5-2x..gif);
+        background-size: 338px 216px;                 
+	}                                                                                                         
+																																	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-5-2x.gif);
+		background-size: 338px 216px;         																		
+	}																					
+																																																					
+}
+                                                                                                    @media only screen and (-webkit-min-pixel-ratio:2), only screen and (min-device-pixel-ratio: 2), screen and (max-width:1200px){                                             
+																																															.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-4-2x.gif);
+        background-size: 254px 168px;                 
+	}											
+																		
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-4-2x.gif);
+        background-size: 254px 168px;                 
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-4-2x.jpg);
+        background-size: 254px 168px;                 
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-4-2x.gif);
+        background-size: 254px 168px;                 
+    }
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-4-2x.gif);
+        background-size: 254px 168px;                 
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-4-2x.gif);
+         background-size: 254px 168px;                 
+       }	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-4-2x..gif);
+        background-size: 254px 168px;                 
+	}     
+																																	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-4-2x.gif);
+        background-size: 254px 168px;																									}																											
+}
+                                                                                                    @media only screen and (-webkit-min-pixel-ratio:2), only screen and (min-device-pixel-ratio: 2), screen and (max-width:1023px){
+																								.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-3-2x.gif);
+        background-size: 464px 168px;                 
+	}															
+															
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-3-2x.gif);
+        background-size: 464px 168px;                 
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-3-2x.jpg);
+        background-size: 464px 168px;                 
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-3-2x.gif);
+        background-size: 464px 168px;                 
+    }
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-3-2x.gif);
+        background-size: 464px 168px;                 
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-3-2x.gif);
+        background-size: 464px 168px;                 
+       }	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-3-2x..gif);
+        background-size: 464px 168px;                 
+	}
+																																	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-3-2x.gif);
+        background-size: 464px 168px;                 
+		}											
+																																																										
+}                                                                                                                                             
+@media only screen and (-webkit-min-pixel-ratio:2), only screen and (min-device-pixel-ratio: 2), screen and (max-width:800px){
+																								.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-2-2x.gif);
+        background-size: 347px 168px;                 
+	}																																											
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-2-2x.gif);
+        background-size: 347px 168px;                 
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-2-2x.jpg);
+        background-size: 347px 168px;                 
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-2-2x.gif);
+        background-size: 347px 168px;                 
+    }
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-2-2x.gif);
+        background-size: 347px 168px;                 
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-2-2x.gif);
+        background-size: 347px 168px;                 
+       }	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-2-2x..gif);
+        background-size: 347px 168px;                 
+	}
+																																	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-2-2x.gif);																			    background-size: 347px 168px;  																								}	
+}                                                                                                                                                                                                       @media only screen and (-webkit-min-pixel-ratio:2), only screen and (min-device-pixel-ratio: 2), screen and (max-width:500px){
+																								.work-preview-one {
+		background-image: url(assets/hackagong/hackagong-1-2x.gif);
+        background-size: 434px 168px;                 
+	}																																													
+	.work-preview-two {
+		background-image: url(assets/unicentre-posters/unicentre-posters-1-2x.gif);
+        background-size: 434px 168px;                 
+	}	
+	
+	.work-preview-three {
+		background-image: url(assets/mash/mash-1-2x.jpg);
+        background-size: 434px 168px;                 
+	}	 
+	
+	.work-preview-four {
+		background-image: url(assets/letter-a-day/letter-a-day-1-2x.gif);
+        background-size: 434px 168px;                 
+    }
+	
+	.work-preview-five {
+		background-image: url(assets/fuel/fuel-1-2x.gif);
+        background-size: 434px 168px;                 
+	}	
+	
+	.work-preview-six {
+		background-image: url(assets/101/101-1-2x.gif);
+        background-size: 434px 168px;                 
+       }	
+	
+	.work-preview-seven {
+		background-image: url(assets/student-posters/student-posters-1-2x.gif);
+        background-size: 434px 168px;                 
+	}
+																																	.work-preview-eight {
+		background-image: url(assets/gcvt/gcvt-1-2x.gif);
+		background-size: 434px 168px;                 
+	}																																						
+}                               
+                                                                                                    

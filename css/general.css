@@ -1,0 +1,133 @@
+/*  =============================================================
+	Travis Wall digital
+	general.css - general and global styles
+	v1.0 - 04.10.13 
+	revision history:
+============================================================== */
+
+/*  =============================================================
+	CONTENTS
+
+	00	global
+	01	toggle classes
+	02	clickable divs
+	03	homepage tooltip
+	04	scroll to top button
+	05	text selection
+
+	06	media queries
+
+============================================================== */
+
+/*  =============================================================
+	00 global
+============================================================== */
+
+body {
+	margin: 0px;
+	padding-bottom: 0px;
+}
+.clear {
+	clear: both;
+}
+.hidden-text {
+	text-indent:-99999px;
+}
+/* hide the wordpress admin bar */
+#wpadminbar { 
+	display:none;
+}
+
+/*  =============================================================
+	01 toggles
+============================================================== */
+
+.hidden {
+	display:none;
+}
+.viewable {
+	display:block !important;				
+}
+
+/*  =============================================================
+	02 clickable divs
+============================================================== */
+
+.clickable-external:hover, .clickable-internal:hover {
+	cursor: pointer; cursor: hand;
+}
+
+/*  =============================================================
+	03 tooltip
+============================================================== */
+
+#dhtmltooltip{
+	position: absolute;
+	background-color:rgba(26,26,26,1);
+	visibility: hidden;
+	z-index: 100;
+	padding:30px 50px 30px 50px;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+
+/*  =============================================================
+	04 scroll to top button
+============================================================== */
+
+#smoothup { 
+	height: 40px; 
+	width: 40px; 
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	text-indent:-9999px;
+	display:none;
+	background: url("assets/top-01.svg");
+	background-position:-40px;		
+	background-size:cover;
+	border-bottom:0px;
+	-webkit-transition-duration: 0.4s; 
+	-moz-transition-duration: 0.4s; transition-duration: 0.4s; 
+}
+#smoothup:hover {
+	-webkit-transform: rotate(360deg);
+	background-position:0px;	
+}
+
+/*  =============================================================
+	05 text selection
+============================================================== */
+
+::selection {
+	background:rgba(247,235,50,0.7);													
+}
+::-moz-selection {
+	background:rgba(247,235,50,0.7);													
+}
+/* pink */ background:rgba(237, 30, 121, 1);
+/* aqua */ background:rgba(0, 169, 157, 1);
+/* green */ background:rgba(217, 224, 33, 1);
+/* purple */ background:rgba(147, 39, 143, 1);
+/* blue */ background:rgba(41, 171, 226, 1);
+/* orange */ background:rgba(241, 90, 36, 1);
+
+/*  =============================================================
+	06 media queries
+============================================================== */
+
+@media screen and (max-width: 1024px) { 
+    #dhtmltooltip {
+        display:none;
+    }
+}				
+@media screen and (min-width: 736px) { 
+	.clear-menu {
+		clear:none;
+    }
+}																																				
+@media screen and (max-width: 735px) { 
+	.clear-menu {
+		clear:both;
+	}
+}

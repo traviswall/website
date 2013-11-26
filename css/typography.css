@@ -100,18 +100,21 @@ h1, h2, h3, h4, h5, h6, h7, h8 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 1.1em;
+	font-size: 1em;
 	text-transform:uppercase !important;
-	margin-top:35px;
+	margin-top:18px;
 	text-align:center;	
 	font-family: "klavika-web-n4","klavika-web",sans-serif !important;
 	font-style: normal !important;
 	font-weight: normal !important;
-	color:rgba(26,26,26,1) !important;
+	color:rgba(256,256,256,1) !important;
 	-webkit-font-smoothing: subpixel-antialiased;		
 }
 h1.about {
 	margin-left:-37px;	
+}
+h1.title{
+	font-size:1.6em;	
 }
 h1.contact {
 	margin-left:-35px;	

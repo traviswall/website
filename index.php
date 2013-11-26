@@ -7,10 +7,15 @@
 
 <!-- start header -->
 <header class="home-page">
-	<div id="header-wrapper" class="centre-column">
-		<div class="bar-button clickable-internal"><h1><a href="/"><?php bloginfo( 'name' ); ?></a></h1></div>			
-		<div class="bar-button bar-button-about"><h1 class="about">ABOUT</h1><div class="icon icon-about"></div></div>
-		<div class="bar-button bar-button-contact"><h1 class="contact">CONTACT</h1><div class="icon"></div></div>	
+	<div id="header-wrapper">
+		<div class="nav-bar-wrapper">
+			<div class="centre-column">
+				<div class="bar-button bar-button-about"><h1 class="about">ABOUT</h1><div class="icon icon-about"></div></div>
+				<div class="bar-button bar-button-contact"><h1 class="contact">CONTACT</h1><div class="icon"></div></div>	
+			</div>
+		</div>
+		<div class="centre-column">
+			<div class="bar-button clickable-internal"><h1 class="title"><a href="/"><?php bloginfo( 'name' ); ?></a></h1></div>					</div>
 	</div>
 </header>
 <!-- end header -->
@@ -142,8 +147,8 @@
 * Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
 ***********************************************/
 
-var offsetxpoint=-60 //Customize x offset of tooltip
-var offsetypoint=-50 //Customize y offset of tooltip
+var offsetxpoint=-20 //Customize x offset of tooltip
+var offsetypoint=-100 //Customize y offset of tooltip
 var ie=document.all
 var ns6=document.getElementById && !document.all
 var enabletip=false
